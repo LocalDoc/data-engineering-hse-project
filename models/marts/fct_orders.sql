@@ -7,6 +7,7 @@ select
     order_date,
     ordered_at,
     order_status,
+    items_count,
     order_amount,
     paid_amount,
     refunded_amount,

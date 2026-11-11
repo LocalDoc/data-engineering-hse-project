@@ -77,3 +77,20 @@ models:
                 values: ['success', 'failed', 'pending']
       - name: is_refund
         description: "Возврат: успешная операция с отрицательной суммой."
+  - name: stg_shop_products
+    description: "Справочник товаров интернет-магазина."
+    columns:
+      - name: product_id
+        description: "Первичный ключ товара."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_shop_product_categories
+    description: "Иерархический справочник категорий товаров."
+    columns:
+      - name: category_id
+        description: "Первичный ключ категории."
+        data_tests:
+          - unique
+          - not_null
